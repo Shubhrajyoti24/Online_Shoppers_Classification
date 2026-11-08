@@ -1,9 +1,9 @@
-**Name** : Shubhrajyoti Das
-**Bits Id** : 2026AJ05524
-**Sem** : 1st
-**ML Assignment 2**
-
 # Online Shoppers Purchasing Intention – Machine Learning Classification
+
+**Name** : Shubhrajyoti Das 
+**Bits Id** : 2026AJ05524 
+**Sem** : 1st 
+**ML Assignment 2** 
 
 ## 1. Project Overview
 
@@ -153,7 +153,7 @@ The `results/` directory contains model comparison results and confusion matrix 
 ### Step 1: Clone the Repository
 
 ```bash
-git clone <YOUR_GITHUB_REPOSITORY_URL>
+git clone https://github.com/Shubhrajyoti24/Online_Shoppers_Classification
 ```
 
 ### Step 2: Navigate to the Project Folder
@@ -195,6 +195,6 @@ Streamlit Community Cloud installs the required libraries using `requirements.tx
 
 **Live Application:** https://online-shoppers-classification-2026aj05524-assignment.streamlit.app/
 
-**GitHub Repository:** Add your GitHub repository URL here.
+**GitHub Repository:** https://github.com/Shubhrajyoti24/Online_Shoppers_Classification
 
 ---
