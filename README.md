@@ -75,6 +75,7 @@ by your application in `results/model_comparison.csv`. Do not enter
 estimated or example values.**
 
   ML Model Name           |   Accuracy   AUC    Precision   Recall    F1      MCC
+  
   ------------------------| ---------- -------  ---------- -------- -------  -------
   Logistic Regression     |   0.8869    0.8996    0.7524    0.4136   0.5338   0.5032
   
