@@ -6,37 +6,21 @@ The objective of this project is to develop and evaluate five machine-learning c
 
 ## 2. Dataset Description
 
-  ---------------------------------------------------------------------------------------------------------------------------------------
-  Item                                Description
-  ----------------------------------- ---------------------------------------------------------------------------------------------------
-  Dataset name                        Online Shoppers Purchasing Intention Dataset
-
-  Source                              [UCI Machine Learning
-                                      Repository](https://archive.ics.uci.edu/dataset/468/online+shoppers+purchasing+intention+dataset)
-
-  Original number of instances        12,330
-
-  Number of input features            17
-
-  Target variable                     `Revenue`
-
-  Classification type                 Binary classification
-
-  Target classes                      `False` -- no purchase; `True` -- purchase
-
-  Numerical features                  10
-
-  Categorical features                7
-
-  Data preparation                    125 exact duplicate rows removed before splitting
-
-  Records used after duplicate        12,205                             
-  removal
-
-  Train/test split                    80% training and 20% testing, stratified
-  
-  Random state                        42
-  ---------------------------------------------------------------------------------------------------------------------------------------
+| Item | Description |
+|---|---|
+| Dataset name | Online Shoppers Purchasing Intention Dataset |
+| Source | [UCI Machine Learning Repository](https://archive.ics.uci.edu/dataset/468/online+shoppers+purchasing+intention+dataset) |
+| Original number of instances | 12,330 |
+| Number of input features | 17 |
+| Target variable | `Revenue` |
+| Classification type | Binary classification |
+| Target classes | `False` -- no purchase; `True` -- purchase |
+| Numerical features | 10 |
+| Categorical features | 7 |
+| Data preparation | 125 exact duplicate rows removed before splitting |
+| Records used after duplicate removal | 12,205 |
+| Train/test split | 80% training and 20% testing, stratified |
+| Random state | 42 |
 
 **Input features**
 
@@ -74,49 +58,24 @@ classifier. **Replace the blank cells with the actual values generated
 by your application in `results/model_comparison.csv`. Do not enter
 estimated or example values.**
 
-  ML Model Name           |   Accuracy   AUC    Precision   Recall    F1      MCC
-  
-  ------------------------| ---------- -------  ---------- -------- -------  -------
-  Logistic Regression     |   0.8869    0.8996    0.7524    0.4136   0.5338   0.5032
-  
-  Decision Tree           |        ---   ---         ---      ---   ---   ---
-  
-  KNN                     |        ---   ---         ---      ---   ---   ---
-  
-  Naive Bayes (Gaussian)  |        ---   ---         ---      ---   ---   ---
-  
-  Support Vector Machine  |        ---   ---         ---      ---   ---   ---
-  
+| ML Model Name | Accuracy | AUC | Precision | Recall | F1 | MCC |
+|---|---:|---:|---:|---:|---:|---:|
+| Logistic Regression | 0.8869 | 0.8996 | 0.7524 | 0.4136 | 0.5338 | 0.5032 |
+| Decision Tree | --- | --- | --- | --- | --- | --- |
+| KNN | --- | --- | --- | --- | --- | --- |
+| Naive Bayes (Gaussian) | --- | --- | --- | --- | --- | --- |
+| Support Vector Machine | --- | --- | --- | --- | --- | --- |
 
 ### 4.2 Observations on Model Performance
 
-  -----------------------------------------------------------------------
-  ML Model Name                       Observation about model performance
-  ----------------------------------- -----------------------------------
-  Logistic Regression                 Add an observation based on the
-                                      model's actual Accuracy, AUC,
-                                      Precision, Recall, F1 and MCC.
-
-  Decision Tree                       Add an observation based on the
-                                      model's actual metrics and
-                                      confusion matrix.
-
-  KNN                                 Add an observation based on the
-                                      model's actual metrics and
-                                      confusion matrix.
-
-  Naive Bayes                         Add an observation based on the
-                                      model's actual metrics and
-                                      confusion matrix.
-
-  Support Vector Machine              Add an observation based on the
-                                      model's actual metrics and
-                                      confusion matrix.
-
-  **Overall winner for this dataset** Identify the model that performs
-                                      best overall and justify the choice
-                                      using the evaluation metrics.
-  -----------------------------------------------------------------------
+| ML Model Name | Observation about model performance |
+|---|---|
+| Logistic Regression | Add an observation based on the model's actual Accuracy, AUC, Precision, Recall, F1 and MCC. |
+| Decision Tree | Add an observation based on the model's actual metrics and confusion matrix. |
+| KNN | Add an observation based on the model's actual metrics and confusion matrix. |
+| Naive Bayes | Add an observation based on the model's actual metrics and confusion matrix. |
+| Support Vector Machine | Add an observation based on the model's actual metrics and confusion matrix. |
+| **Overall winner for this dataset** | Identify the model that performs best overall and justify the choice using the evaluation metrics. |
 
 **Note:** The target classes are imbalanced. Therefore, model
 performance should not be judged using accuracy alone. Consider AUC,
