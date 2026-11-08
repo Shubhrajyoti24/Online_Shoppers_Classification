@@ -15,16 +15,26 @@ The objective of this project is to develop and evaluate five machine-learning c
                                       Repository](https://archive.ics.uci.edu/dataset/468/online+shoppers+purchasing+intention+dataset)
 
   Original number of instances        12,330
+
   Number of input features            17
+
   Target variable                     `Revenue`
+
   Classification type                 Binary classification
+
   Target classes                      `False` -- no purchase; `True` -- purchase
+
   Numerical features                  10
+
   Categorical features                7
+
   Data preparation                    125 exact duplicate rows removed before splitting
+
   Records used after duplicate        12,205                             
   removal
+
   Train/test split                    80% training and 20% testing, stratified
+  
   Random state                        42
   ---------------------------------------------------------------------------------------------------------------------------------------
 
