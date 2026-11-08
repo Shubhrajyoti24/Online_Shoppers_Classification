@@ -54,33 +54,27 @@ All five classifiers were trained using the same dataset and the same stratified
 ### 4.1 Model Comparison -- Evaluation Metrics
 
 The following table reports the six required evaluation metrics for each
-classifier. **Replace the blank cells with the actual values generated
-by your application in `results/model_comparison.csv`. Do not enter
-estimated or example values.**
+classifier.
 
 | ML Model Name | Accuracy | AUC | Precision | Recall | F1 | MCC |
 |---|---:|---:|---:|---:|---:|---:|
 | Logistic Regression | 0.8869 | 0.8996 | 0.7524 | 0.4136 | 0.5338 | 0.5032 |
-| Decision Tree | --- | --- | --- | --- | --- | --- |
-| KNN | --- | --- | --- | --- | --- | --- |
-| Naive Bayes (Gaussian) | --- | --- | --- | --- | --- | --- |
-| Support Vector Machine | --- | --- | --- | --- | --- | --- |
+| Decision Tree | 0.8558 | 0.7376 | 0.5373 | 0.5654 | 0.5510 | 0.4654 |
+| KNN | 0.8734 | 0.7958 | 0.6622 | 0.3901 | 0.4909 | 0.4435 |
+| Naive Bayes (Gaussian) | 0.2773 | 0.7502 | 0.1756 | 0.9791 | 0.2978 | 0.1375 |
+| Support Vector Machine | 0.8955 | 0.8733 | 0.7361 | 0.5183 | 0.6083 | 0.5614 |
 
 ### 4.2 Observations on Model Performance
 
 | ML Model Name | Observation about model performance |
 |---|---|
-| Logistic Regression | Add an observation based on the model's actual Accuracy, AUC, Precision, Recall, F1 and MCC. |
-| Decision Tree | Add an observation based on the model's actual metrics and confusion matrix. |
-| KNN | Add an observation based on the model's actual metrics and confusion matrix. |
-| Naive Bayes | Add an observation based on the model's actual metrics and confusion matrix. |
-| Support Vector Machine | Add an observation based on the model's actual metrics and confusion matrix. |
-| **Overall winner for this dataset** | Identify the model that performs best overall and justify the choice using the evaluation metrics. |
+| Logistic Regression | Achieved good accuracy (88.69%) and the highest AUC score (0.8996), indicating strong classification capability. However, its recall (41.36%) is relatively low, meaning it misses some actual purchase sessions. |
+| Decision Tree | Achieved moderate accuracy (85.58%) with a recall of 56.54%, identifying more actual purchase sessions than Logistic Regression and KNN. Its AUC (0.7376) is the lowest among the five models, indicating comparatively weaker overall discrimination. |
+| KNN | Achieved 87.34% accuracy with an AUC of 0.7958, showing reasonable classification performance. However, its recall (39.01%) and F1 score (0.4909) are relatively low, indicating difficulty identifying actual purchase sessions. |
+| Naive Bayes | Achieved the highest recall (97.91%), meaning it identifies almost all actual purchase sessions. However, its accuracy (27.73%) and precision (17.56%) are very low, indicating a large number of false-positive predictions. |
+| Support Vector Machine | Achieved the highest accuracy (89.55%), F1 score (0.6083), and MCC (0.5614), demonstrating the strongest balanced performance overall. Its AUC (0.8733) is also high, although slightly lower than Logistic Regression. |
+| **Overall winner for this dataset** | Support Vector Machine (SVM) is the overall winner because it achieves the highest accuracy, F1 score, and MCC, offering the best balance among the evaluated models. |
 
-**Note:** The target classes are imbalanced. Therefore, model
-performance should not be judged using accuracy alone. Consider AUC,
-precision, recall, F1 and MCC together when identifying the strongest
-model.
 
 ## 5. Streamlit Application
 
