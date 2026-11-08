@@ -74,13 +74,18 @@ classifier. **Replace the blank cells with the actual values generated
 by your application in `results/model_comparison.csv`. Do not enter
 estimated or example values.**
 
-  ML Model Name              Accuracy   AUC   Precision   Recall    F1   MCC
-  ------------------------ ---------- ----- ----------- -------- ----- -----
-  Logistic Regression             ---   ---         ---      ---   ---   ---
+  ML Model Name              Accuracy   AUC    Precision   Recall    F1      MCC
+  ------------------------ ---------- -------  ---------- -------- -------  -------
+  Logistic Regression        0.8869    0.8996    0.7524    0.4136   0.5338   0.5032
+  
   Decision Tree                   ---   ---         ---      ---   ---   ---
+  
   KNN                             ---   ---         ---      ---   ---   ---
+  
   Naive Bayes (Gaussian)          ---   ---         ---      ---   ---   ---
+  
   Support Vector Machine          ---   ---         ---      ---   ---   ---
+  
 
 ### 4.2 Observations on Model Performance
 
